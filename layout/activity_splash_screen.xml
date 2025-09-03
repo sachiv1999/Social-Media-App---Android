@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Social Media"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+</RelativeLayout>

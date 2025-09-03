@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/helpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Help" />
+
+    <Button
+        android:id="@+id/termsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terms And onditions"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/privacyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Privacy Policy"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

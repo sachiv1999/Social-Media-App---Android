@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD">
+
+    <LinearLayout
+        android:id="@+id/registerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="24dp"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@drawable/bg_rounded_card"
+        android:elevation="6dp">
+
+        <TextView
+            android:text="Create Account"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"/>
+
+        <EditText
+            android:id="@+id/nameRegister"
+            android:hint="Full Name"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:background="@drawable/bg_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/emailRegister"
+            android:hint="Email"
+            android:textSize="18sp"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:background="@drawable/bg_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/passwordRegister"
+            android:hint="Password"
+            android:textSize="18sp"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:background="@drawable/bg_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:text="Register"
+            android:backgroundTint="#3F51B5"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/goToLogin"
+            android:text="Already have an account? Login"
+            android:textColor="#3F51B5"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

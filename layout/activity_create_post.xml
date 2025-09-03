@@ -1,0 +1,96 @@
+<!-- ✅ activity_create_post.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_revert"
+                android:contentDescription="Back"
+                android:padding="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Post"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="12dp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/postEditText"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:hint="Write your blog or thoughts..."
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:background="@android:drawable/edit_text"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/addBlogBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post Blog"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/addPostBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Image"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/imagePreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/imageDescriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter image description..."
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/finalPostBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post Image"
+            android:backgroundTint="#FF5722"
+            android:textColor="#FFFFFF"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>
